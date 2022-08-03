@@ -11,9 +11,11 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.rootView()
         return true
     }
 
@@ -32,5 +34,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+//MARK: - start screen
+extension AppDelegate{
+    private func rootView(){
+        let mainNavigator = MainNavigator()
+        mainNavigator.viewControllers = [ViewController()]
+        window?.rootViewController = mainNavigator
+        window?.makeKeyAndVisible()
+    }
 }
 
