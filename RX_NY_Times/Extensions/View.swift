@@ -123,3 +123,21 @@ extension UIView{
     }
     
 }
+
+extension Array where Element : UIView {
+    var hStacked: HStack {
+        let object = HStack()
+        self.forEach({object.addArrangedSubview($0)})
+        return object
+    }
+    var hStackedFilled: HStack {
+        let object = hStacked
+        object.distribution = .fill
+        return object
+    }
+    var vStacked: VStack {
+        let object = VStack()
+        self.forEach({object.addArrangedSubview($0)})
+        return object
+    }
+}
