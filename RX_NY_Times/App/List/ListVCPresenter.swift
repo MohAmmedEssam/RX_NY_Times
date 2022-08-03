@@ -22,6 +22,7 @@ class ListVCPresenter: ListVCPresenterProtocol {
 
     struct Input {
         let viewDidLoad = PublishRelay<Void>()
+        let selectedModel = PublishRelay<Result>()
     }
 
     struct Output {
@@ -68,6 +69,12 @@ class ListVCPresenter: ListVCPresenterProtocol {
             .bind(to: output.list)
             .disposed(by: disposeBag)
 
+        input.selectedModel
+            .asObservable()
+            .subscribe(onNext: {[weak self] in
+                self?.router.navDetails(model: $0)
+            })
+            .disposed(by: disposeBag)
     }
 
 }

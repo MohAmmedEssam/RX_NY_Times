@@ -76,6 +76,11 @@ extension ListVCViewController{
             .drive(tableView.rx.items(cellIdentifier: ListVCTableCell.self.identifier)){ (index,model,cell:ListVCTableCell) in
                 cell.handleCell(model: model)
             }.disposed(by: disposeBag)
+        
+        tableView.rx.modelSelected(Result.self)
+            .asObservable()
+            .bind(to: presenter.input.selectedModel)
+            .disposed(by: disposeBag)
     }
 
 }

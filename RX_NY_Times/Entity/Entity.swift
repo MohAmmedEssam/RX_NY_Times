@@ -6,11 +6,6 @@
 //
 
 import Foundation
-import UIKit
-//MARK: - Gloabal objects
-struct GlobalObjects {
-    static let imagesCache = NSCache<NSString, UIImage>()
-}
 
 // MARK: - Welcome
 struct MostPopularResponse: Codable {

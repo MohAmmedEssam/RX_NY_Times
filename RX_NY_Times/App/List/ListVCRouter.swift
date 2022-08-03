@@ -30,4 +30,9 @@ class ListVCRouter: ListVCRouterProtocol {
 
         return viewController
     }
+    
+    func navDetails(model: Result){
+        let router = DetailsViewRouter(model: model).createModule()
+        GlobalObjects.mainNavigator.pushViewController(router, animated: true)
+    }
 }
