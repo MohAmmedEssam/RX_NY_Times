@@ -16,6 +16,8 @@
 		DED0CE0A289AD23700943649 /* RX_NY_TimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0CE09289AD23700943649 /* RX_NY_TimesUITests.swift */; };
 		DED0CE0C289AD23700943649 /* RX_NY_TimesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0CE0B289AD23700943649 /* RX_NY_TimesUITestsLaunchTests.swift */; };
 		DED0CE1D289ADAA700943649 /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0CE1C289ADAA700943649 /* MainNavigator.swift */; };
+		DED0CE1F289ADB2E00943649 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0CE1E289ADB2E00943649 /* DesignSystem.swift */; };
+		DED0CE22289ADC0B00943649 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0CE21289ADC0B00943649 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		DED0CE09289AD23700943649 /* RX_NY_TimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RX_NY_TimesUITests.swift; sourceTree = "<group>"; };
 		DED0CE0B289AD23700943649 /* RX_NY_TimesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RX_NY_TimesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DED0CE1C289ADAA700943649 /* MainNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
+		DED0CE1E289ADB2E00943649 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		DED0CE21289ADC0B00943649 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		DED0CDE7289AD23300943649 /* RX_NY_Times */ = {
 			isa = PBXGroup;
 			children = (
+				DED0CE20289ADBFB00943649 /* Extensions */,
 				DED0CE19289AD26500943649 /* App */,
 				DED0CE18289AD25900943649 /* Resources */,
 			);
@@ -128,6 +133,7 @@
 				DED0CDF3289AD23600943649 /* LaunchScreen.storyboard */,
 				DED0CDE8289AD23300943649 /* AppDelegate.swift */,
 				DED0CDEA289AD23300943649 /* SceneDelegate.swift */,
+				DED0CE1E289ADB2E00943649 /* DesignSystem.swift */,
 				DED0CDF1289AD23600943649 /* Assets.xcassets */,
 				DED0CDF6289AD23600943649 /* Info.plist */,
 			);
@@ -141,6 +147,14 @@
 				DED0CDEC289AD23300943649 /* ViewController.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		DED0CE20289ADBFB00943649 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DED0CE21289ADC0B00943649 /* String.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DED0CE22289ADC0B00943649 /* String.swift in Sources */,
 				DED0CDED289AD23300943649 /* ViewController.swift in Sources */,
+				DED0CE1F289ADB2E00943649 /* DesignSystem.swift in Sources */,
 				DED0CDE9289AD23300943649 /* AppDelegate.swift in Sources */,
 				DED0CE1D289ADAA700943649 /* MainNavigator.swift in Sources */,
 				DED0CDEB289AD23300943649 /* SceneDelegate.swift in Sources */,

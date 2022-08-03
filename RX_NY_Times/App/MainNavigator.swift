@@ -18,9 +18,10 @@ class MainNavigator: UINavigationController {
     }
     
     private func setupUI(){
-        self.navigationBar.barTintColor = #colorLiteral(red: 0.2725717723, green: 0.8898935318, blue: 0.7545517087, alpha: 1)
-        self.navigationBar.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)]
+        self.navigationBar.backgroundColor = DesignSystem.appColor(.primary)
+        self.navigationBar.barTintColor = DesignSystem.appColor(.secondry)
+        self.navigationBar.tintColor = DesignSystem.appColor(.secondry)
+        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:DesignSystem.appColor(.secondry)]
         
         UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -1000.0, vertical: 0.0), for: .default)
     }
