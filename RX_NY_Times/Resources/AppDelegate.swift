@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate{
     private func rootView(){
         let mainNavigator = MainNavigator()
-        mainNavigator.viewControllers = [ViewController()]
+        mainNavigator.viewControllers = [ListVCRouter().createModule()]
         window?.rootViewController = mainNavigator
         window?.makeKeyAndVisible()
     }

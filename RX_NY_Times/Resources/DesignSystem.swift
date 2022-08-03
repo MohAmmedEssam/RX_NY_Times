@@ -41,7 +41,8 @@ extension DesignSystem{
         case error = "#Be3025"
         
         case label = "#000000"
-        
+        case secondarylabel = "#7E7E83"
+
         var value:UIColor{
             return self.rawValue.hexToColor
         }
