@@ -449,9 +449,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DED0CE2F289AE70B00943649 /* NetworkLayer.swift in Sources */,
 				DED0CE22289ADC0B00943649 /* String.swift in Sources */,
 				DED0CDED289AD23300943649 /* ViewController.swift in Sources */,
 				DED0CE1F289ADB2E00943649 /* DesignSystem.swift in Sources */,
+				DED0CE2E289AE70B00943649 /* APIConfiguration.swift in Sources */,
+				DED0CE2D289AE70B00943649 /* EndPoints.swift in Sources */,
 				DED0CDE9289AD23300943649 /* AppDelegate.swift in Sources */,
 				DED0CE27289AE46D00943649 /* ActivityIndicator.swift in Sources */,
 				DED0CE1D289ADAA700943649 /* MainNavigator.swift in Sources */,
