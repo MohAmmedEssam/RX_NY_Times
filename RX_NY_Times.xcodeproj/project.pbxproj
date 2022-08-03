@@ -37,6 +37,13 @@
 		DED0CE4E289AF54200943649 /* label.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0CE4D289AF54200943649 /* label.swift */; };
 		DED0CE50289AF60900943649 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0CE4F289AF60900943649 /* Stack.swift */; };
 		DED0CE52289AF70700943649 /* image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0CE51289AF70700943649 /* image.swift */; };
+		DED0CE59289AFFF500943649 /* DetailsViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0CE54289AFFF500943649 /* DetailsViewContract.swift */; };
+		DED0CE5A289AFFF500943649 /* DetailsViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0CE55289AFFF500943649 /* DetailsViewPresenter.swift */; };
+		DED0CE5B289AFFF500943649 /* DetailsViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0CE56289AFFF500943649 /* DetailsViewRouter.swift */; };
+		DED0CE5C289AFFF500943649 /* DetailsViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0CE57289AFFF500943649 /* DetailsViewViewController.swift */; };
+		DED0CE5D289AFFF500943649 /* DetailsViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0CE58289AFFF500943649 /* DetailsViewInteractor.swift */; };
+		DED0CE5F289B01AF00943649 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0CE5E289B01AF00943649 /* ScrollView.swift */; };
+		DED0CE61289B055C00943649 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0CE60289B055C00943649 /* Global.swift */; };
 		FF7986D478E64E661755F8E9 /* Pods_RX_NY_Times.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC014F8954E43641A0B59CC4 /* Pods_RX_NY_Times.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +104,13 @@
 		DED0CE4D289AF54200943649 /* label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = label.swift; sourceTree = "<group>"; };
 		DED0CE4F289AF60900943649 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		DED0CE51289AF70700943649 /* image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image.swift; sourceTree = "<group>"; };
+		DED0CE54289AFFF500943649 /* DetailsViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewContract.swift; sourceTree = "<group>"; };
+		DED0CE55289AFFF500943649 /* DetailsViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewPresenter.swift; sourceTree = "<group>"; };
+		DED0CE56289AFFF500943649 /* DetailsViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewRouter.swift; sourceTree = "<group>"; };
+		DED0CE57289AFFF500943649 /* DetailsViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewViewController.swift; sourceTree = "<group>"; };
+		DED0CE58289AFFF500943649 /* DetailsViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewInteractor.swift; sourceTree = "<group>"; };
+		DED0CE5E289B01AF00943649 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		DED0CE60289B055C00943649 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		F52C8F33AC3C7E9BBFBF09DB /* Pods-RX_NY_Times-RX_NY_TimesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RX_NY_Times-RX_NY_TimesUITests.debug.xcconfig"; path = "Target Support Files/Pods-RX_NY_Times-RX_NY_TimesUITests/Pods-RX_NY_Times-RX_NY_TimesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FDA5BF6F415FEA9781540381 /* Pods-RX_NY_TimesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RX_NY_TimesTests.debug.xcconfig"; path = "Target Support Files/Pods-RX_NY_TimesTests/Pods-RX_NY_TimesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,6 +236,7 @@
 			children = (
 				DED0CE1C289ADAA700943649 /* MainNavigator.swift */,
 				DED0CE30289AEE4B00943649 /* List */,
+				DED0CE53289AFFD700943649 /* Details */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -244,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				DED0CDEC289AD23300943649 /* ViewController.swift */,
+				DED0CE5E289B01AF00943649 /* ScrollView.swift */,
 				DED0CE4F289AF60900943649 /* Stack.swift */,
 			);
 			path = Components;
@@ -266,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				DED0CE3E289AEF5400943649 /* Entity.swift */,
+				DED0CE60289B055C00943649 /* Global.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -295,6 +312,18 @@
 				DED0CE4B289AF13E00943649 /* ListVCTableCell.swift */,
 			);
 			path = subviews;
+			sourceTree = "<group>";
+		};
+		DED0CE53289AFFD700943649 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				DED0CE54289AFFF500943649 /* DetailsViewContract.swift */,
+				DED0CE55289AFFF500943649 /* DetailsViewPresenter.swift */,
+				DED0CE56289AFFF500943649 /* DetailsViewRouter.swift */,
+				DED0CE57289AFFF500943649 /* DetailsViewViewController.swift */,
+				DED0CE58289AFFF500943649 /* DetailsViewInteractor.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,25 +567,32 @@
 				DED0CE47289AF00500943649 /* NetworkLayer.swift in Sources */,
 				DED0CE22289ADC0B00943649 /* String.swift in Sources */,
 				DED0CDED289AD23300943649 /* ViewController.swift in Sources */,
+				DED0CE59289AFFF500943649 /* DetailsViewContract.swift in Sources */,
 				DED0CE4E289AF54200943649 /* label.swift in Sources */,
 				DED0CE46289AF00500943649 /* APIConfiguration.swift in Sources */,
 				DED0CE1F289ADB2E00943649 /* DesignSystem.swift in Sources */,
 				DED0CE52289AF70700943649 /* image.swift in Sources */,
+				DED0CE61289B055C00943649 /* Global.swift in Sources */,
 				DED0CE37289AEE6C00943649 /* ListVCPresenter.swift in Sources */,
 				DED0CE3C289AEEC700943649 /* RxLifeCycle.swift in Sources */,
 				DED0CE38289AEE6C00943649 /* ListVCRouter.swift in Sources */,
 				DED0CE39289AEE6C00943649 /* ListVCViewController.swift in Sources */,
+				DED0CE5B289AFFF500943649 /* DetailsViewRouter.swift in Sources */,
 				DED0CDE9289AD23300943649 /* AppDelegate.swift in Sources */,
 				DED0CE49289AF0FE00943649 /* UITableView.swift in Sources */,
 				DED0CE27289AE46D00943649 /* ActivityIndicator.swift in Sources */,
 				DED0CE36289AEE6C00943649 /* ListVCContract.swift in Sources */,
 				DED0CE4C289AF13E00943649 /* ListVCTableCell.swift in Sources */,
 				DED0CE1D289ADAA700943649 /* MainNavigator.swift in Sources */,
+				DED0CE5C289AFFF500943649 /* DetailsViewViewController.swift in Sources */,
 				DED0CE50289AF60900943649 /* Stack.swift in Sources */,
 				DED0CE3F289AEF5400943649 /* Entity.swift in Sources */,
+				DED0CE5A289AFFF500943649 /* DetailsViewPresenter.swift in Sources */,
 				DED0CE25289AE25A00943649 /* View.swift in Sources */,
 				DED0CDEB289AD23300943649 /* SceneDelegate.swift in Sources */,
 				DED0CE45289AF00500943649 /* EndPoints.swift in Sources */,
+				DED0CE5D289AFFF500943649 /* DetailsViewInteractor.swift in Sources */,
+				DED0CE5F289B01AF00943649 /* ScrollView.swift in Sources */,
 				DED0CE3A289AEE6C00943649 /* ListVCInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

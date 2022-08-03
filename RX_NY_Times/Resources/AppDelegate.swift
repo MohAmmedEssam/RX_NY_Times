@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //MARK: - start screen
 extension AppDelegate{
     private func rootView(){
-        let mainNavigator = MainNavigator()
+        let mainNavigator = GlobalObjects.mainNavigator
         mainNavigator.viewControllers = [ListVCRouter().createModule()]
         window?.rootViewController = mainNavigator
         window?.makeKeyAndVisible()

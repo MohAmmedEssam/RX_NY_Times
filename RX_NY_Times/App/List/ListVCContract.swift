@@ -27,5 +27,5 @@ protocol ListVCInteractorProtocol {
 
 
 protocol ListVCRouterProtocol {
-
+    func navDetails(model: Result)
 }

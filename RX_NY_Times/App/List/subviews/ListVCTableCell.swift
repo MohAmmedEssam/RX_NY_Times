@@ -61,7 +61,7 @@ class ListVCTableCell: UITableViewCell {
         self.addSubview(stack)
         stack.fillParentConstraints(heightPercentage: 0.95)
 
-        imgView.withConstraints(withHeight: (UIScreen.main.bounds.height * 0.18))
+        imgView.withConstraints(withHeight: (UIScreen.main.bounds.height * 0.25))
     }
     
     //MARK: handleCell

@@ -54,7 +54,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //MARK: - start screen
 extension SceneDelegate{
     func rootView(){
-        let mainNavigator = MainNavigator()
+        let mainNavigator = GlobalObjects.mainNavigator
         mainNavigator.viewControllers = [ListVCRouter().createModule()]
         window?.rootViewController = mainNavigator
         window?.makeKeyAndVisible()
